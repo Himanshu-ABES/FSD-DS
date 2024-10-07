@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.fitem{
+    width: 150px;
+    height: 150px;
+    background-color: lightpink;
+    font-size: 17px;
+    margin: 20px;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 150px;
+
+}
+.fitem1{
+    order: 3;
+}
+.fitem4{
+    order: -1;
+    flex-grow: 3;
+}
+.fitem2{
+    flex-grow: 2;
+}
+.fcontainer{
+    height: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
