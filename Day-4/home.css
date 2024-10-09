@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-gap: 10px;
+    padding: 10px;
+    background: #2196F3;
+}
+
+.grid-item{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    /* height: 200px; */
+}
+
+.navbar, .image, .footer, .copyright{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
