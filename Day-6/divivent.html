@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div id="dv">Square</div>
+    <script>
+        changecolor = () =>{
+            let dv=document.querySelector('div');
+            dv.style.backgroundColor = 'red';
+        }
+        let dv=document.getElementById('dv');
+        dv.addEventListener('mouseover', changecolor);
+        dv.addEventListener('mouseout', () => {
+            dv.style.backgroundColor = 'crimson';
+        });
+        dv
+    </script>
+</body>
+</html>

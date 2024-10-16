@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://abes.ac.in">ABES</a><br><br>
+    <button id="btn">Change</button>
+    <script>
+        let state = true
+        changeLink = () =>{
+            let a1=document.querySelector('a');
+            if(state){
+                a1.setAttribute('href', 'https://aktu.ac.in');
+                a1.textContent='AKTU';
+                state = false;
+            }
+            else{
+                a1.setAttribute('href', 'https://abes.ac.in');
+                a1.textContent='ABES';
+                state = true;
+            }
+        }
+        let btn = document.querySelector('#btn');
+        btn.addEventListener('click', changeLink);
+    </script>
+</body>
+</html>
